@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin:  0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+  }
+
+#fb{color: blue;}
+
+a{
+  text-decoration: none;
+}
+
+p{
+    margin: 0;
+}
+
+.custom:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background-image: url('../img/fondo.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}

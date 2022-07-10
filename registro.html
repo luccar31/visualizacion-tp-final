@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css" integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="./css/stlye.css">
+    <link rel="stylesheet" href="./css/registro.css">
+    <title>Hemocentro</title>
+  </head>
+  <body class=" bg-opacity-25">
+    <header>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Inicio del menu -->
+    <nav class="navbar navbar-expand-md  bg-white">
+        <div class="container-fluid d-md-flex">      
+            <a class="navbar-brand" href="">
+                <!--Isologotipo-->
+                <img src="./img/isotipo.png" alt="" width="50">
+                <!--<span class="text-danger">Hemocentro</span>-->
+            </a>
+            <!-- Boton donar -->
+            <a class="d-flex order-md-2">
+                <button class="btn btn-outline-danger d-md-inline-block">Quiero Donar</button>
+            </a>
+            <!--Boton del menu-->
+            <button class="navbar-toggler order-md-3" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+              <!--Elementos del menu colapsable-->
+              <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav d-flex">
+                    <li class="nav-item me-auto">
+                        <a class="nav-link activate" href="">Inicio</a>
+                    </li>
+                    <li class="nav-item me-auto">
+                        <a class="nav-link" href="">Sobre Hemocentro</a>
+                    </li>
+                    <li class="nav-item me-auto">
+                        <a class="nav-link" href="">Requisitos</a>
+                    </li>
+                    <li class="nav-item me-auto">
+                        <a class="nav-link" href="">Registrarse</a>
+                    </li>
+                </ul>
+              </div>
+        </div>
+    </nav>
+    </header>
+    <main class="custom">
+
+        <div class="container col-md-3 bg-light m-5">
+            <h2 class="m-2 text-center">Registrate</h2>
+            <form class="form-inline" role="form">
+                <div class="form-group  mt-3">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" class="form-control" id="nombre">
+                </div>
+                <div class="form-group mt-3">
+                  <label for="apellido">Apellido:</label>
+                  <input type="text" class="form-control" id="apellido">
+                </div>
+                <div class="form-group  mt-3">
+                    <label for="edad">Edad:</label>
+                    <input type="text" class="form-control" id="edad">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="peso">Peso:</label>
+                    <input type="text" class="form-control" id="peso">
+                </div>
+                <div class="form-group  mt-3">
+                    <label for="genero">Genero:</label>
+                    <input type="text" class="form-control" id="genero">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group mt-3">
+                    <label for="pass">contraseña:</label>
+                    <input type="password" class="form-control" id="pass">
+                </div>
+                <div class="form-group  mt-3">
+                    <label for="reppass">Repetir contraseña:</label>
+                    <input type="password" class="form-control" id="reppass">
+                </div>
+                <button type="submit" class="btn btn-outline-danger btn-sm m-4 d-block mx-auto">Registrarse</button>
+              </form>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="d-flex flex-column flex-md-row justify-content-center">
+                <div class="d-flex justify-content-center d-md-block"><p>© 2022 Copyright:</p></div>
+                <div class="d-flex justify-content-center d-md-block"><p class="me-1"> Lucas Cardozo </p></div>
+                <div class="d-flex justify-content-center d-md-block"><p class="me-1"> Stefania Rinaldi </p></div>
+                <div class="d-flex justify-content-center d-md-block"><p class="me-1">Diego López</p></div>
+                <i class="d-flex justify-content-center d-md-block bi bi-facebook me-md-3" id="fb"></i>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
