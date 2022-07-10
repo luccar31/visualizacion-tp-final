@@ -3,7 +3,6 @@
     margin:  0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-    overflow-x: hidden;
   }
 
 #fb{
@@ -19,4 +18,19 @@ a{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+/** Fix slide **/
+.slide{
+  margin-top: 10px;
+}
+
+.slide img{
+  height: 65vh;
+}
+
+@media screen and (min-width: 768px){
+  .slide img{
+    height: 100vh;
+  }
 }

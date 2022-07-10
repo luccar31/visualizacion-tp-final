@@ -54,8 +54,56 @@
       </div>
     </nav>
   </header>
-  <main class="flex-grow-1">
-    holis
+  <!-- clases del main: background flex-grow-1 d-flex justify-content-center align-items-center-->
+  <main class="">
+    <!-- Carrousel -->  
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/banner2.png" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/banner3.png" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/banner4.png" class="d-block w-100">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Presentacion -->
+    <div class="background vh-100  mt-2">
+      <h2 class="fw-semibold  text-danger text-center">Elegí banco de sangre, doná y salvá vidas</h2>
+      <div class="container-fluid position-relative h-75">
+        <p class="d-md-none">Encontrá tu banco de sangre más cercano y doná. Recordá que con <span class="fw-bold">una sola donación ayudas hasta 3 pacientes.</span></p>
+        <p class="d-none d-md-block text-center">
+          ¿Sabías que 9 de cada 10 personas necesitará en algún momento de su vida una transfusión de sangre, para sí misma o para algún familiar? 
+          Esta sangre sólo se puede obtener a través de la donación de otras personas. Hoy más que nunca, <span class="fw-bold">doná sangre para ayudar a hasta 3 pacientes.</span> 
+        </p>
+        <a class="position-absolute top-100 start-50 translate-middle" href="form-sangre.html">
+          <button class="btn btn-danger d-md-inline-block">Quiero Donar</button>
+        </a>
+        <!-- card con opacity 0.8 ver 
+        <div class="card">
+          <div class="card-body">
+            Encontra el banco de sangre mas cercano y doná. Recorda que con una sola donacion ayudas hasta 3 pacientes
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
   </main>
   <footer class="container-fluid bg-white">
     <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
