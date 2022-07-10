@@ -55,72 +55,77 @@
       </div>
     </nav>
   </header>
-  <main class="background flex-grow-1 d-flex justify-content-center align-items-center">
+  <main class="background flex-grow-1">
     <!-- Inicio form -->
-    <form class="container bg-white border border-danger rounded-3 py-4 my-3">
-      <!-- Pregunta 1-->
-      <h4 class="fw-bold">Formulario de donación de sangre</h4>
-      <div class="mb-3">
-        <label for="edad" class="form-label">¿Cuantos años tenés?</label>
-        <input type="number" class="form-control" id="edad">
-      </div>
-      <!-- Pregunta 2-->
-      <div class="mb-3">
-        <p class="form-label">¿Pesás mas de 50 kilos?</p>
-        <div class="d-flex">
-          <div class="form-check ms-3">
-            <input class="form-check-input" type="radio" name="pregunta2" id="pregunta2-1" checked>
-            <label class="form-check-label" for="pregunta2-1">Sí</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="pregunta2" id="pregunta2-2">
-            <label class="form-check-label" for="pregunta2-2">No</label>
+    <div class="row">
+      <div class="col-2 col-md-3"></div>
+      <form class="col-8 col-md-6 bg-white border border-danger rounded-3 p-4 my-4">
+        <!-- Pregunta 1-->
+        <h4 class="fw-bold">Formulario de donación de sangre</h4>
+        <div class="mb-3">
+          <label for="edad" class="form-label">¿Cuantos años tenés?</label>
+          <input type="number" class="form-control" id="edad">
+        </div>
+        <!-- Pregunta 2-->
+        <div class="mb-3">
+          <p class="form-label">¿Pesás mas de 50 kilos?</p>
+          <div class="d-flex">
+            <div class="form-check ms-3">
+              <input class="form-check-input" type="radio" name="pregunta2" id="pregunta2-1" checked>
+              <label class="form-check-label" for="pregunta2-1">Sí</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta2" id="pregunta2-2">
+              <label class="form-check-label" for="pregunta2-2">No</label>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Pregunta 3-->
-      <div class="mb-3">
-        <p class="form-label">En los últimos 6 meses, ¿te hiciste algún tatuaje, alguna endoscopía o cirugía?</p>
-        <div class="d-flex">
-          <div class="form-check ms-3">
-            <input class="form-check-input" type="radio" name="pregunta3" id="pregunta3-1" checked>
-            <label class="form-check-label" for="pregunta3-1">Sí</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="pregunta3" id="pregunta3-2">
-            <label class="form-check-label" for="pregunta3-2">No</label>
-          </div>
-        </div>
-      </div>
-      <!-- Pregunta 4-->
-      <div class="mb-3">
-        <p class="form-label">¿Padecés diabetes tratada con insulina?</p>
-        <div class="d-flex">
-          <div class="form-check ms-3">
-            <input class="form-check-input" type="radio" name="pregunta4" id="pregunta4-1" checked>
-            <label class="form-check-label" for="pregunta4-1">Sí</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="pregunta4" id="pregunta4-2">
-            <label class="form-check-label" for="pregunta4-2">No</label>
+        <!-- Pregunta 3-->
+        <div class="mb-3">
+          <p class="form-label">En los últimos 6 meses, ¿te hiciste algún tatuaje, alguna endoscopía o cirugía?</p>
+          <div class="d-flex">
+            <div class="form-check ms-3">
+              <input class="form-check-input" type="radio" name="pregunta3" id="pregunta3-1" checked>
+              <label class="form-check-label" for="pregunta3-1">Sí</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta3" id="pregunta3-2">
+              <label class="form-check-label" for="pregunta3-2">No</label>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Pregunta 5-->
-      <div class="mb-3">
-        <p class="form-label">¿Has tomado alguna vez Etretinato o Acitretina para psoriasis?</p>
-        <div class="d-flex">
-          <div class="form-check ms-3">
-            <input class="form-check-input" type="radio" name="pregunta5" id="pregunta5-1" checked>
-            <label class="form-check-label" for="pregunta5-1">Sí</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="pregunta5" id="pregunta5-2">
-            <label class="form-check-label" for="pregunta5-2">No</label>
+        <!-- Pregunta 4-->
+        <div class="mb-3">
+          <p class="form-label">¿Padecés diabetes tratada con insulina?</p>
+          <div class="d-flex">
+            <div class="form-check ms-3">
+              <input class="form-check-input" type="radio" name="pregunta4" id="pregunta4-1" checked>
+              <label class="form-check-label" for="pregunta4-1">Sí</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta4" id="pregunta4-2">
+              <label class="form-check-label" for="pregunta4-2">No</label>
+            </div>
           </div>
         </div>
-      </div>
-    </form>
+        <!-- Pregunta 5-->
+        <div class="mb-3">
+          <p class="form-label">¿Has tomado alguna vez Etretinato o Acitretina para psoriasis?</p>
+          <div class="d-flex">
+            <div class="form-check ms-3">
+              <input class="form-check-input" type="radio" name="pregunta5" id="pregunta5-1" checked>
+              <label class="form-check-label" for="pregunta5-1">Sí</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="pregunta5" id="pregunta5-2">
+              <label class="form-check-label" for="pregunta5-2">No</label>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="col-2 col-md-3"></div>
+    </div>
+    
     <!-- Fin form -->
   </main>
   <footer class="container-fluid bg-white">
