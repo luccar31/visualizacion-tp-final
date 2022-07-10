@@ -1,21 +1,19 @@
-* {
+*, *:before, *:after{
     box-sizing: border-box;
     margin:  0;
     padding: 0;
     font-family: 'Inter', sans-serif;
   }
 
-#fb{color: blue;}
+#fb{
+  color: blue;
+}
 
 a{
   text-decoration: none;
 }
 
-p{
-    margin: 0;
-}
-
-.custom:before{
+.background:before{
     content: '';
     display: block;
     position: absolute;

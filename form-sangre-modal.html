@@ -1,160 +1,169 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css" integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-    <link rel="stylesheet" href="./css/stlye.css">
-    <link rel="stylesheet" href="./css/no-data.css">
-    <title>Hemocentro</title>
-  </head>
-  <body class="min-vh-100 d-flex flex-column">
-    <header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/no-data.css">
+  <title>Hemocentro - Modal</title>
+</head>
+
+<body class="min-vh-100 d-flex flex-column">
+  <header>
     <!-- Inicio del menu -->
     <nav class="navbar navbar-expand-md bg-white">
-        <div class="container-fluid d-md-flex">      
-            <a class="navbar-brand" href="">
-                <!--Isologotipo-->
-                <img src="./img/isotipo.png" alt="" width="50">
-                <!--<span class="text-danger">Hemocentro</span>-->
-            </a>
-            <!-- Boton donar -->
-            <a class="d-flex order-md-2">
-                <button class="btn btn-outline-danger d-md-inline-block">Quiero Donar</button>
-            </a>
-            <!--Boton del menu-->
-            <button class="navbar-toggler order-md-3" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-              <!--Elementos del menu colapsable-->
-              <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav d-flex">
-                    <li class="nav-item me-auto">
-                        <a class="nav-link activate" href="">Inicio</a>
-                    </li>
-                    <li class="nav-item me-auto">
-                        <a class="nav-link" href="">Sobre Hemocentro</a>
-                    </li>
-                    <li class="nav-item me-auto">
-                        <a class="nav-link" href="">Requisitos</a>
-                    </li>
-                    <li class="nav-item me-auto">
-                        <a class="nav-link" href="">Registrarse</a>
-                    </li>
-                </ul>
-              </div>
-        </div>
-    </nav>
-    </header>
-    <main class="custom flex-grow-1 d-flex justify-content-center align-items-center">
-      <!-- Inicio form -->
-      <form class="container bg-white border border-danger rounded-3 py-4 my-3">
-        <!-- Pregunta 1-->
-        <h4 class="fw-bold">Formulario de donación de sangre</h4>
-        <div class="mb-3">
-          <label for="edad" class="form-label text-danger">¿Cuantos años tenés?</label>
-          <input type="number" class="form-control border border-danger" id="edad" value="17">
-          <div class="invalid-feedback d-block">
-            Debés tener al menos 18 años
-          </div>
-        </div>
-        <!-- Pregunta 2-->
-        <div class="mb-3">
-          <p class="form-label">¿Pesás mas de 50 kilos?</p>
-          <div class="d-flex">
-            <div class="form-check ms-3">
-              <input class="form-check-input" type="radio" name="pregunta2" id="pregunta2-1" checked>
-              <label class="form-check-label" for="pregunta2-1">Sí</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="pregunta2" id="pregunta2-2">
-              <label class="form-check-label" for="pregunta2-2">No</label>
-            </div>
-          </div>
-        </div>
-        <!-- Pregunta 3-->
-        <div class="mb-3">
-          <p class="form-label">En los últimos 6 meses, ¿te hiciste algún tatuaje, alguna endoscopía o cirugía?</p>
-          <div class="d-flex">
-            <div class="form-check ms-3">
-              <input class="form-check-input" type="radio" name="pregunta3" id="pregunta3-1" checked>
-              <label class="form-check-label" for="pregunta3-1">Sí</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="pregunta3" id="pregunta3-2">
-              <label class="form-check-label" for="pregunta3-2">No</label>
-            </div>
-          </div>
-        </div>
-        <!-- Pregunta 4-->
-        <div class="mb-3">
-          <p class="form-label">¿Padecés diabetes tratada con insulina?</p>
-          <div class="d-flex">
-            <div class="form-check ms-3">
-              <input class="form-check-input" type="radio" name="pregunta4" id="pregunta4-1" checked>
-              <label class="form-check-label" for="pregunta4-1">Sí</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="pregunta4" id="pregunta4-2">
-              <label class="form-check-label" for="pregunta4-2">No</label>
-            </div>
-          </div>
-        </div>
-        <!-- Pregunta 5-->
-        <div class="mb-3">
-          <p class="form-label">¿Has tomado alguna vez Etretinato o Acitretina para psoriasis?</p>
-          <div class="d-flex">
-            <div class="form-check ms-3">
-              <input class="form-check-input" type="radio" name="pregunta5" id="pregunta5-1" checked>
-              <label class="form-check-label" for="pregunta5-1">Sí</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="pregunta5" id="pregunta5-2">
-              <label class="form-check-label" for="pregunta5-2">No</label>
-            </div>
-          </div>
-        </div>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          ¿Puedo donar?
+      <div class="container-fluid d-md-flex">
+        <a class="navbar-brand" href="">
+          <!--Isologotipo-->
+          <img src="./img/isotipo.png" alt="" width="50">
+          <!--<span class="text-danger">Hemocentro</span>-->
+        </a>
+        <!-- Boton donar -->
+        <a class="d-flex order-md-2">
+          <button class="btn btn-outline-danger d-md-inline-block">Quiero Donar</button>
+        </a>
+        <!--Boton del menu-->
+        <button class="navbar-toggler order-md-3" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-      </form>
-      <!-- Fin form -->
-    </main>
-    <footer class="container-fluid bg-white">
-            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
-              <div class="p-3">© 2022 Copyright</div>
-              <div class="p-3">
-                Lucas Cardozo - Stefanía Rinaldi - Diego López
-              </div>
-              <div class="p-3"><i class="bi bi-facebook" id="fb"></i></div>
-            </div>
-    </footer>
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="modal-title text-center text-danger my-auto w-100 fw-bold" id="exampleModalLabel">Lo sentimos :(</h3>
+        <!--Elementos del menu colapsable-->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav d-flex">
+            <li class="nav-item me-auto">
+              <a class="nav-link activate" href="">Inicio</a>
+            </li>
+            <li class="nav-item me-auto">
+              <a class="nav-link" href="">Sobre Hemocentro</a>
+            </li>
+            <li class="nav-item me-auto">
+              <a class="nav-link" href="">Requisitos</a>
+            </li>
+            <li class="nav-item me-auto">
+              <a class="nav-link" href="">Registrarse</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="background flex-grow-1 d-flex justify-content-center align-items-center">
+    <!-- Inicio form -->
+    <form class="container bg-white border border-danger rounded-3 py-4 my-3">
+      <!-- Pregunta 1-->
+      <h4 class="fw-bold">Formulario de donación de sangre</h4>
+      <div class="mb-3">
+        <label for="edad" class="form-label text-danger">¿Cuantos años tenés?</label>
+        <input type="number" class="form-control border border-danger" id="edad" value="17">
+        <div class="invalid-feedback d-block">
+          Debés tener al menos 18 años
+        </div>
+      </div>
+      <!-- Pregunta 2-->
+      <div class="mb-3">
+        <p class="form-label">¿Pesás mas de 50 kilos?</p>
+        <div class="d-flex">
+          <div class="form-check ms-3">
+            <input class="form-check-input" type="radio" name="pregunta2" id="pregunta2-1" checked>
+            <label class="form-check-label" for="pregunta2-1">Sí</label>
           </div>
-          <div class="modal-body">
-            <p class="text-center">No cumplís con los <span class="fw-bold">requisitos necesarios</span> para poder donar sangre.</p>
-            <p class="text-center">Podés intentarlo en otro momento nuevamente o <span class="fw-bold">asistir de forma presencial</span> a cualquiera de nuestros puntos de donación para hacer el cuestionario  con la evaluación de nuestro cuerpo de enfermer@s</p>
-          </div>
-          <div class="modal-footer d-flex flex-column justify-content-center">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Entendido</button>
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Asistiré presencialmente</button>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="pregunta2" id="pregunta2-2">
+            <label class="form-check-label" for="pregunta2-2">No</label>
           </div>
         </div>
       </div>
+      <!-- Pregunta 3-->
+      <div class="mb-3">
+        <p class="form-label">En los últimos 6 meses, ¿te hiciste algún tatuaje, alguna endoscopía o cirugía?</p>
+        <div class="d-flex">
+          <div class="form-check ms-3">
+            <input class="form-check-input" type="radio" name="pregunta3" id="pregunta3-1" checked>
+            <label class="form-check-label" for="pregunta3-1">Sí</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="pregunta3" id="pregunta3-2">
+            <label class="form-check-label" for="pregunta3-2">No</label>
+          </div>
+        </div>
+      </div>
+      <!-- Pregunta 4-->
+      <div class="mb-3">
+        <p class="form-label">¿Padecés diabetes tratada con insulina?</p>
+        <div class="d-flex">
+          <div class="form-check ms-3">
+            <input class="form-check-input" type="radio" name="pregunta4" id="pregunta4-1" checked>
+            <label class="form-check-label" for="pregunta4-1">Sí</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="pregunta4" id="pregunta4-2">
+            <label class="form-check-label" for="pregunta4-2">No</label>
+          </div>
+        </div>
+      </div>
+      <!-- Pregunta 5-->
+      <div class="mb-3">
+        <p class="form-label">¿Has tomado alguna vez Etretinato o Acitretina para psoriasis?</p>
+        <div class="d-flex">
+          <div class="form-check ms-3">
+            <input class="form-check-input" type="radio" name="pregunta5" id="pregunta5-1" checked>
+            <label class="form-check-label" for="pregunta5-1">Sí</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="pregunta5" id="pregunta5-2">
+            <label class="form-check-label" for="pregunta5-2">No</label>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        ¿Puedo donar?
+      </button>
+    </form>
+    <!-- Fin form -->
+  </main>
+  <footer class="container-fluid bg-white">
+    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+      <div class="p-3">© 2022 Copyright</div>
+      <div class="p-3">
+        Lucas Cardozo - Stefanía Rinaldi - Diego López
+      </div>
+      <div class="p-3"><i class="bi bi-facebook" id="fb"></i></div>
     </div>
+  </footer>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-  </body>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title text-center text-danger my-auto w-100 fw-bold" id="exampleModalLabel">Lo sentimos :(
+          </h3>
+        </div>
+        <div class="modal-body">
+          <p class="text-center">No cumplís con los <span class="fw-bold">requisitos necesarios</span> para poder donar
+            sangre.</p>
+          <p class="text-center">Podés intentarlo en otro momento nuevamente o <span class="fw-bold">asistir de forma
+              presencial</span> a cualquiera de nuestros puntos de donación para hacer el cuestionario con la evaluación
+            de nuestro cuerpo de enfermer@s</p>
+        </div>
+        <div class="modal-footer d-flex flex-column justify-content-center">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Entendido</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Asistiré presencialmente</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
