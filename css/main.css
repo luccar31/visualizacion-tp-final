@@ -1,36 +1,39 @@
-*, *:before, *:after{
-    box-sizing: border-box;
-    margin:  0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-  }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
 
-#fb{
+#fb {
   color: blue;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.background{
-  background-image: url('../img/fondo-transparente.png');
+.background {
+  background-image: url("../img/fondo-transparente.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 /** Fix slide **/
-.slide{
+/*
+.slide {
   margin-top: 10px;
 }
-
-.slide img{
+*/
+.slide img {
   height: 65vh;
 }
 
-@media screen and (min-width: 768px){
-  .slide img{
+@media screen and (min-width: 768px) {
+  .slide img {
     height: 100vh;
   }
 }
