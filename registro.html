@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css"
         integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap" rel="stylesheet">
     <!-- Estilos propios -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/form-red.css">
@@ -20,41 +22,46 @@
     <header>
         <!-- Inicio del menu -->
         <nav class="navbar navbar-expand-md  bg-white">
-            <div class="container-fluid d-md-flex">
-                <a class="navbar-brand" href="">
-                    <!--Isologotipo-->
-                    <img src="./img/isotipo.png" alt="" width="50">
-                    <!--<span class="text-danger">Hemocentro</span>-->
-                </a>
-                <!-- Boton donar -->
-                <a class="d-flex order-md-2" href="form-sangre.html">
-                    <button class="btn btn-outline-danger d-md-inline-block">Quiero Donar</button>
-                </a>
-                <!--Boton del menu-->
-                <button class="navbar-toggler order-md-3" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!--Elementos del menu colapsable-->
-                <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav d-flex">
-                        <li class="nav-item me-auto">
-                            <a class="nav-link activate" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item me-auto">
-                            <a class="nav-link" href="graficos.html">Estadística</a>
-                        </li>
-                        <li class="nav-item me-auto">
-                            <a class="nav-link" href="requisitos.html">Requisitos</a>
-                        </li>
-                        <li class="nav-item me-auto">
-                            <a class="nav-link" href="registro.html">Registrarse</a>
-                        </li>
-                    </ul>
-                </div>
+          <div class="container-fluid d-md-flex">
+            <a class="navbar-brand" href="index.html">
+              <!--Imagotipo-->
+              <div class="d-flex flex-column  align-items-center">
+                <img src="./img/isotipo.png" alt="" width="50">
+                <span class="text-danger logotipo">Hemocentro</span>
+              </div>
+            </a>
+            <!-- Boton donar -->
+            <a class="d-flex order-md-2" href="form-sangre.html">
+              <button class="btn btn-outline-danger d-md-inline-block">Quiero Donar</button>
+            </a>
+            <!--Boton del menu-->
+            <button class="navbar-toggler order-md-3" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Elementos del menu colapsable-->
+            <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav d-flex ">
+                <li class="nav-item me-auto">
+                  <a class="nav-link activate" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item me-auto">
+                  <a class="nav-link" href="graficos.html">Estadística</a>
+                </li>
+                <li class="nav-item me-auto">
+                  <a class="nav-link" href="requisitos.html">Requisitos</a>
+                </li>
+                <li class="nav-item me-auto">
+                  <a class="nav-link" href="registro.html">Registrarse</a>
+                </li>
+                <li class="nav-item me-auto">
+                  <a class="nav-link" href="">Centros de donación</a>
+                </li>
+              </ul>
             </div>
+          </div>
         </nav>
-    </header>
+      </header>
     <main class="background flex-grow-1 d-flex justify-content-center align-items-center">
 
         <div class="container col-md-6 bg-white m-5 border border-danger rounded">

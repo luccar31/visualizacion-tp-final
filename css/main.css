@@ -1,7 +1,4 @@
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
+*{
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
@@ -22,18 +19,30 @@ a {
   background-size: cover;
 }
 
-/** Fix slide **/
-/*
-.slide {
-  margin-top: 10px;
+.btn-home{
+  font-size: 150%;
 }
-*/
-.slide img {
-  height: 65vh;
+
+.logotipo{
+  font-family: Castoro;
+  font-size: 65%;
 }
 
 @media screen and (min-width: 768px) {
-  .slide img {
-    height: 100vh;
-  }
+  .title{font-size: 3rem;}
+
+  .text{font-size: 1.3rem;}
+
+  .sub-title{font-size: 1.4rem;}
+
+  .map{width: 50%;}
+
+}
+
+@media screen and (min-width: 1024px) {
+  .title{font-size: 5rem;}
+
+  .text{font-size: 1.5rem;}
+
+  .sub-title{font-size: 4rem;}
 }

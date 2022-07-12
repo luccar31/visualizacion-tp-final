@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css"
     integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+  <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap" rel="stylesheet">
   <!-- Estilos propios -->
   <link rel="stylesheet" href="./css/main.css">
   <title>Hemocentro - Requisitos</title>
@@ -20,10 +22,12 @@
     <!-- Inicio del menu -->
     <nav class="navbar navbar-expand-md  bg-white">
       <div class="container-fluid d-md-flex">
-        <a class="navbar-brand" href="">
-          <!--Isologotipo-->
-          <img src="./img/isotipo.png" alt="" width="50">
-          <!--<span class="text-danger">Hemocentro</span>-->
+        <a class="navbar-brand" href="index.html">
+          <!--Imagotipo-->
+          <div class="d-flex flex-column  align-items-center">
+            <img src="./img/isotipo.png" alt="" width="50">
+            <span class="text-danger logotipo">Hemocentro</span>
+          </div>
         </a>
         <!-- Boton donar -->
         <a class="d-flex order-md-2" href="form-sangre.html">
@@ -36,7 +40,7 @@
         </button>
         <!--Elementos del menu colapsable-->
         <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav d-flex">
+          <ul class="navbar-nav d-flex ">
             <li class="nav-item me-auto">
               <a class="nav-link activate" href="index.html">Inicio</a>
             </li>
@@ -48,6 +52,9 @@
             </li>
             <li class="nav-item me-auto">
               <a class="nav-link" href="registro.html">Registrarse</a>
+            </li>
+            <li class="nav-item me-auto">
+              <a class="nav-link" href="">Centros de donación</a>
             </li>
           </ul>
         </div>
@@ -61,7 +68,7 @@
       <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
         <div class="col">
           <div class="card p-4 h-100">
-            <img src="img/icons/businessman.png" class="card-img-top" alt="Imagen requisito">
+            <img src="./img/icons/businessman.png" class="card-img-top" alt="Imagen requisito">
             <div class="card-body" >
               <p class="card-text text-center">Tener entre 16 y 65</p>
             </div>
@@ -69,7 +76,7 @@
         </div>
         <div class="col">
           <div class="card p-4 h-100">
-            <img src="/img/icons/weight-scale.png" class="card-img-top" alt="Imagen requisito">
+            <img src="./img/icons/weight-scale.png" class="card-img-top" alt="Imagen requisito">
             <div class="card-body" >
               <p class="card-text text-center">Pesar más de 50 kilos</p>
             </div>
@@ -77,7 +84,7 @@
         </div>
         <div class="col">
           <div class="card p-4 h-100">
-            <img src="/img/icons/health-insurance.png" class="card-img-top" alt="Imagen requisito">
+            <img src="./img/icons/health-insurance.png" class="card-img-top" alt="Imagen requisito">
             <div class="card-body" >
               <p class="card-text text-center">Estar en buen estado de salud</p>
             </div>
@@ -85,7 +92,7 @@
         </div>
         <div class="col">
           <div class="card p-4 h-100">
-            <img src="/img/icons/tattoo-machine.png" class="card-img-top" alt="Imagen requisito">
+            <img src="./img/icons/tattoo-machine.png" class="card-img-top" alt="Imagen requisito">
             <div class="card-body" >
               <p class="card-text text-center">Haber pasado 6 meses desde el último tatuaje</p>
             </div>
@@ -93,7 +100,7 @@
         </div>
         <div class="col">
           <div class="card p-4 h-100">
-            <img src="/img/icons/clock.png" class="card-img-top" alt="Imagen requisito">
+            <img src="./img/icons/clock.png" class="card-img-top" alt="Imagen requisito">
             <div class="card-body" >
               <p class="card-text text-center">Dormir más de 6 horas</p>
             </div>
@@ -101,7 +108,7 @@
         </div>
         <div class="col">
           <div class="card p-4 h-100">
-            <img src="/img/icons/coffee.png" class="card-img-top" alt="Imagen requisito">
+            <img src="./img/icons/coffee.png" class="card-img-top" alt="Imagen requisito">
             <div class="card-body" >
               <p class="card-text text-center">Desayunar y/o almorzar</p>
             </div>
@@ -109,7 +116,7 @@
         </div>
         <div class="col">
           <div class="card p-4 h-100">
-            <img src="/img/icons/calendar.png" class="card-img-top" alt="Imagen requisito">
+            <img src="./img/icons/calendar.png" class="card-img-top" alt="Imagen requisito">
             <div class="card-body" >
               <p class="card-text text-center">Haber pasado 2 meses desde la última donación</p>
             </div>
@@ -117,7 +124,7 @@
         </div>
         <div class="col">
           <div class="card p-4 h-100">
-            <img src="/img/icons/signature.png" class="card-img-top" alt="Imagen requisito">
+            <img src="./img/icons/signature.png" class="card-img-top" alt="Imagen requisito">
             <div class="card-body" >
               <p class="card-text text-center">Leer y estar de acuerdo con los términos y condiciones</p>
             </div>

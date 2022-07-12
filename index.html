@@ -9,21 +9,25 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css"
     integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+  <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap" rel="stylesheet">
   <!-- Estilos propios -->
   <link rel="stylesheet" href="./css/main.css">
-  <title>Hemocentro - Inicio</title>
+  <title>Hemocentro</title>
 </head>
 
-<body class="min-vh-100 d-flex flex-column">
+<body>
   <header>
     <!-- Inicio del menu -->
     <nav class="navbar navbar-expand-md  bg-white">
       <div class="container-fluid d-md-flex">
-        <a class="navbar-brand" href="">
-          <!--Isologotipo-->
-          <img src="./img/isotipo.png" alt="" width="50">
-          <!--<span class="text-danger">Hemocentro</span>-->
+        <a class="navbar-brand" href="index.html">
+          <!--Imagotipo-->
+          <div class="d-flex flex-column  align-items-center">
+            <img src="./img/isotipo.png" alt="" width="50">
+            <span class="text-danger logotipo">Hemocentro</span>
+          </div>
         </a>
         <!-- Boton donar -->
         <a class="d-flex order-md-2" href="form-sangre.html">
@@ -36,7 +40,7 @@
         </button>
         <!--Elementos del menu colapsable-->
         <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav d-flex">
+          <ul class="navbar-nav d-flex ">
             <li class="nav-item me-auto">
               <a class="nav-link activate" href="index.html">Inicio</a>
             </li>
@@ -49,62 +53,56 @@
             <li class="nav-item me-auto">
               <a class="nav-link" href="registro.html">Registrarse</a>
             </li>
+            <li class="nav-item me-auto">
+              <a class="nav-link" href="">Centros de donación</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-  <!-- clases del main: background flex-grow-1 d-flex justify-content-center align-items-center-->
-  <main class="">
-    <!-- Carrousel -->  
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./img/banner2.png" class="d-block w-100">
+  <main class="d-flex flex-column justify-content-center background">
+    <!--Prensentacion-->
+    <section class="vh-100  container-fluid">
+      <div class="d-flex flex-column">
+        <div class="container-fluid pt-5">
+          <h1 class="title fw-semibold text-danger text-center">Elegí banco de sangre, doná y salvá vidas</h1>
         </div>
-        <div class="carousel-item">
-          <img src="./img/banner3.png" class="d-block w-100">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/banner4.png" class="d-block w-100">
+        <div class="container-fluid h-75">
+          <h6 class="d-md-none">Encontrá tu banco de sangre más cercano y doná. Recordá que con <span class="fw-bold">una sola donación ayudas hasta 3 pacientes.</span></h6>
+          <h6 class="d-none d-md-block text-center text p-4">
+            ¿Sabías que 9 de cada 10 personas necesitará en algún momento de su vida una transfusión de sangre, para sí misma o para algún familiar? 
+            Esta sangre sólo se puede obtener a través de la donación de otras personas. Hoy más que nunca, <span class="fw-bold">doná sangre para ayudar a hasta 3 pacientes.</span> 
+          </h6>
+          <a class="d-flex justify-content-center" href="form-sangre.html">
+            <button class="btn-home btn btn-danger d-md-inline-block">Quiero Donar</button>
+          </a>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!-- Presentacion -->
-    <div class="vh-100 d-flex flex-column justify-content-end background">
-      <div class="container-fluid pt-5">
-        <h1 class="fw-semibold text-danger text-center" style="font-size: 5rem;">Elegí banco de sangre, doná y salvá vidas</h1>
-      </div>
-      <div class="container-fluid position-relative h-75">
-        <h3 class="d-md-none">Encontrá tu banco de sangre más cercano y doná. Recordá que con <span class="fw-bold">una sola donación ayudas hasta 3 pacientes.</span></h3>
-        <h3 class="d-none d-md-block text-center">
-          ¿Sabías que 9 de cada 10 personas necesitará en algún momento de su vida una transfusión de sangre, para sí misma o para algún familiar? 
-          Esta sangre sólo se puede obtener a través de la donación de otras personas. Hoy más que nunca, <span class="fw-bold">doná sangre para ayudar a hasta 3 pacientes.</span> 
-        </h3>
-        <a class="" href="form-sangre.html">
-          <button class="btn btn-danger d-md-inline-block">Quiero Donar</button>
-        </a>
-        <!-- card con opacity 0.8 ver 
-        <div class="card">
-          <div class="card-body">
-            Encontra el banco de sangre mas cercano y doná. Recorda que con una sola donacion ayudas hasta 3 pacientes
+    </section>
+    <!--Mapa-->
+    <section class="vh-100 container-fluid">
+      <h1 class="title fw-semibold text-danger text-center">Bancos para donar</h1>
+      <div class="d-flex flex-column">
+        <div class="container-fluid text-center">
+          <h6 class="text p-xl-2 mb-xl-5 p-md-3">Acercaté a tu punto de donación mas cercano. Recorda revisar los<a class="fw-bold text-danger" href="requisitos.html"> requisitos.</a></h6>
+        </div>
+        <div class="d-flex justify-content-center justify-content-md-around">
+          <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1ojX3M5ExoLczgOU7cVTaCzLD1nwcOMs&ehbc=2E312F" height="400"></iframe>
+          <div class="d-none d-md-flex flex-md-column align-items-md-center">
+            <h2 class="fw-semibold text-danger .sub-title">Turnos Disponibles</h2>
+            <p class="text">15/07: Hospital Italiano</p>
+            <p class="text">20/07: Sanatorio Mendez</p>
+            <p class="text">25/07: CEMIC</p>
           </div>
         </div>
-        -->
       </div>
+    </section>
+    <div class="d-md-none text-center">
+      <h2 class="fw-semibold text-danger text-center">Turnos Disponibles</h2>
+      <p>15/07: Hospital Italiano</p>
+      <p>20/07: Sanatorio Mendez</p>
+      <p>25/07: CEMIC</p>
     </div>
   </main>
   <footer class="container-fluid bg-white">
